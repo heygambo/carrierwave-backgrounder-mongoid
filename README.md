@@ -7,9 +7,9 @@ A Rails Test App to demonstrate Carrierwave Store Assets to happen twice using c
 Requirements
 ------------
 
-ImageMagick
-Mongoid
-Redis
+* ImageMagick
+* MongoDB
+* Redis
 
 Get it running
 --------------
