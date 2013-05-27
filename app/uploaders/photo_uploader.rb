@@ -42,25 +42,9 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   process :resize_to_fit => [1920, 1080]
-
-  version :hd do
-    process resize_to_fit: [1280, 720]
-  end
-
-  version :svga do
-    process resize_to_fit: [800, 600]
-  end
-
-  version :medium_rect do
-    process resize_to_fill: [200, 150]
-  end
   
-  version :small_rect do
+  version :small do
     process resize_to_fill: [140, 105]
-  end
-  
-  version :thumb do
-    process resize_to_fill: [75, 75]
   end
   
 end

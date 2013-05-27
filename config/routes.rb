@@ -1,3 +1,4 @@
 CarrierwaveBackgrounderMongoid::Application.routes.draw do
-  root :to => "home#index"
+  root :to => "photos#index"
+  resources :photos, only: [:index, :create]
 end
