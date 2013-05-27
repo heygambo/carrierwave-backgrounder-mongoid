@@ -1,0 +1,10 @@
+# Sample configuration file for Sidekiq.
+# Options here can still be overridden by cmd line args.
+#   sidekiq -C config.yml
+---
+:verbose: false
+:concurrency: 10
+:queues:
+  - [carrierwave, 5]
+  - [critical, 4]
+  - [default, 1]
